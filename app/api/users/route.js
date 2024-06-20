@@ -2,9 +2,9 @@ import { NextResponse } from 'next/server';
 import dbConnect from '@/app/lib/dbConnect';
 import User from '@/app/models/User';
 
-export const runtime = 'edge';
+// export const runtime = 'edge';
 
-export async function POST(request) {
+export async function GET(request) {
     try {
         // const db = await dbConnect();
 
