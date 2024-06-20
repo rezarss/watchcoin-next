@@ -2,8 +2,6 @@
 import { useState, useEffect } from 'react'
 import Image from "next/image";
 import axios from 'axios'
-import { WebApp } from '@vkruglikov/react-telegram-web-app';
-
 
 export default function Home() {
   const [user, setUser] = useState(null)
