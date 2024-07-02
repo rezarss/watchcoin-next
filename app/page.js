@@ -23,7 +23,7 @@ export default function Home() {
       {userId ? (
         <p className="text-xl">شناسه کاربر شما: {userId} تمام</p>
       ) : (
-        <p className="text-xl">Loading...!!</p>
+        <p className="text-xl">Loading...</p>
       )}
       <CoinClickerGame />
     </main>
