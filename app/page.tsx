@@ -4,15 +4,20 @@ import Script from "next/script";
 import CoinClickerGame from "./components/CoinClickerGame";
 
 export default function Home() {
-  const [userId, setUserId] = useState(null);
+  const [userId, setUserId] = useState<number | null>(null);
 
   useEffect(() => {
-    if (window.Telegram && window.Telegram.WebApp) {
+    if (
+      typeof window !== "undefined" &&
+      window.Telegram &&
+      window.Telegram.WebApp
+    ) {
       const webApp = window.Telegram.WebApp;
       webApp.ready();
-      setUserId(webApp.initDataUnsafe?.user?.id);
+      setUserId(webApp.initDataUnsafe?.user?.id ?? null);
     }
   }, []);
+
   return (
     <main>
       <Script
