@@ -10,7 +10,7 @@ const CoinClickerGame = () => {
   const [boosters, setBoosters] = useState({
     multitap: { level: 12, cost: 300000 },
     energyLimit: { level: 15, cost: 10 },
-    rechargingSpeed: { level: 1, cost: 100000 },
+    rechargingSpeed: { level: 1, cost: 10 },
   });
 
   const handleCoinClick = () => {
