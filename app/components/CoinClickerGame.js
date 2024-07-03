@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 const CoinClickerGame = () => {
   const [coins, setCoins] = useState(0);
   const [clickPower, setClickPower] = useState(1);
-  const [energy, setEnergy] = useState(7500);
-  const [maxEnergy, setMaxEnergy] = useState(7500);
+  const [energy, setEnergy] = useState(5000);
+  const [maxEnergy, setMaxEnergy] = useState(5000);
   const [showBoost, setShowBoost] = useState(false);
   const [boosters, setBoosters] = useState({
     multitap: { level: 12, cost: 300000 },
