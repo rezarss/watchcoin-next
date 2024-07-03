@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const CoinClickerGame = () => {
-  const [coins, setCoins] = useState(34283);
+  const [coins, setCoins] = useState(0);
   const [clickPower, setClickPower] = useState(1);
   const [energy, setEnergy] = useState(7500);
   const [maxEnergy, setMaxEnergy] = useState(7500);
@@ -62,7 +62,7 @@ const CoinClickerGame = () => {
 
       <motion.button
         onClick={handleCoinClick}
-        className="bg-yellow-400 hover:bg-yellow-500 w-80 h-80 rounded-full mb-8 shadow-lg focus:outline-none"
+        className="bg-yellow-400 hover:bg-yellow-500 w-60 h-60 rounded-full mb-8 shadow-lg focus:outline-none"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
