@@ -19,12 +19,12 @@ export default function Home() {
         src="https://telegram.org/js/telegram-web-app.js"
         strategy="beforeInteractive"
       />
-      <h1 className="text-4xl font-bold mb-8">Telegram Mini App</h1>
+      {/* <h1 className="text-4xl font-bold mb-8">Telegram Mini App</h1>
       {userId ? (
         <p className="text-xl">شناسه کاربر شما: {userId} تمام</p>
       ) : (
         <p className="text-xl">Loading...</p>
-      )}
+      )} */}
       <CoinClickerGame />
     </main>
   );
