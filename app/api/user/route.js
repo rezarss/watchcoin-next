@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import dbConnect from "../../lib/dbConnect";
 import User from "../../models/Users";
 
+export const runtime = "edge";
+
 export async function GET(request) {
   const telegramId = request.nextUrl.searchParams.get("tgid");
   await dbConnect();
