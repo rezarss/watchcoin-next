@@ -26,5 +26,5 @@ export async function GET(request) {
 
 export async function POST(request) {
   const test = await request.json();
-  return NextResponse.json({ test: test }, { status: 200 });
+  return NextResponse.json({ testProperty: test }, { status: 200 });
 }
