@@ -55,7 +55,7 @@ const CoinClickerGame = () => {
     <>
       <div className="w-full mb-4">
         <h1 className="text-3xl font-bold text-center mb-2">WatchCoin</h1>
-        <h2>{process.env.NEXT_PUBLIC_SOMETEXT}</h2>
+        <h2>some text: {process.env.NEXT_PUBLIC_SOMETEXT}</h2>
         <div className="flex justify-center items-center mb-2">
           <span className="text-4xl font-bold">{coins.toLocaleString()}</span>
         </div>
