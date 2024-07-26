@@ -58,6 +58,7 @@ const CoinClickerGame = () => {
     }
   };
 
+  // maybe unused below functions
   const handleUpgrade = (boosterType) => {
     const booster = boosters[boosterType];
     if (coins >= booster.cost) {

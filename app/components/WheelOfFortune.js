@@ -2,6 +2,7 @@
 import React from "react";
 import { Wheel } from "react-custom-roulette";
 
+// wheel data
 const data = [
   {
     option: "10 Coins",
