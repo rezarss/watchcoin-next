@@ -1,7 +1,11 @@
 "use client";
-import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import Script from "next/script";
-import CoinClickerGame from "./components/CoinClickerGame";
+
+// لود کردن CoinClickerGame فقط در سمت کلاینت
+const CoinClickerGame = dynamic(() => import("./components/CoinClickerGame"), {
+  ssr: false,
+});
 
 export default function Home() {
   const [userId, setUserId] = useState(null);
