@@ -7,7 +7,11 @@ export default function Home() {
   const [userId, setUserId] = useState(null);
 
   useEffect(() => {
-    if (window.Telegram && window.Telegram.WebApp) {
+    if (
+      typeof window !== "undefined" &&
+      window.Telegram &&
+      window.Telegram.WebApp
+    ) {
       const webApp = window.Telegram.WebApp;
       webApp.ready();
       setUserId(webApp.initDataUnsafe?.user?.id);
