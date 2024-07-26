@@ -1,6 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 import Script from "next/script";
+import { useState, useEffect } from "react";
 
 // لود کردن CoinClickerGame فقط در سمت کلاینت
 const CoinClickerGame = dynamic(() => import("./components/CoinClickerGame"), {
