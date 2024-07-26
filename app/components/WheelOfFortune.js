@@ -48,7 +48,9 @@ const WheelOfFortune = ({ onFinished }) => {
           onFinished(data[prizeNumber]);
         }}
       />
-      <button onClick={handleSpinClick}>Spin</button>
+      <button className="bg-slate-100 rounded p-2" onClick={handleSpinClick}>
+        Spin
+      </button>
     </div>
   );
 };
