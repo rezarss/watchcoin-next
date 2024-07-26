@@ -208,7 +208,25 @@ const CoinClickerGame = () => {
     );
   };
 
-  // ... Rest of the code remains the same
+  const BoostScreen = () => (
+    <div className="w-full">
+      <h2 className="text-2xl font-bold mb-4">Boosters:</h2>
+      {Object.entries(boosters).map(([key, booster]) => (
+        <motion.button
+          key={key}
+          onClick={() => handleUpgrade(key)}
+          className="w-full bg-gray-800 text-left p-3 rounded-lg mb-2 flex justify-between items-center"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <span>{key.charAt(0).toUpperCase() + key.slice(1)}</span>
+          <span>
+            {booster.level} level | {booster.cost.toLocaleString()} coins
+          </span>
+        </motion.button>
+      ))}
+    </div>
+  );
 
   return (
     <div className="flex flex-col items-center justify-between min-h-screen bg-gradient-to-b from-purple-900 to-purple-600 text-white p-4">
